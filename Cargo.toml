@@ -1,0 +1,16 @@
+[package]
+name = "rest-api-ex"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = { version = "0.7.5", features = ["macros"] }
+rand = "0.8.5"
+serde = { version = "1.0.209", features = ["derive"] }
+#tokio = { version = "1.39.3", features = ["rt", "rt-multi-thread", "macros"] }
+tracing = "0.1.40"
+tracing-subscriber = "0.3.18"
+sqlx = { version = "0.8.2", features = ["postgres", "runtime-tokio-native-tls"] }
+tokio = { version = "1.40.0", features = ["full"] }
+serde_json = "1.0.127"
+anyhow = "1.0.89"
